@@ -1,21 +1,56 @@
 /*body{
-background-image: url('https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/images/13%20June%202014.jpg?itok=NYulScxO');
+background-image: url(');
 }*/
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; 
+}
+
+.img-portfolio{
+  width: 180px;
+  height: 180px;
+}
+
 body{
-  background-image: url('https://image.freepik.com/fotos-gratis/gradiente-de-rosa-pastel-degrade-foto-abstrata-desfocada-linhas-suaves-cor-de-fundo_49683-4158.jpg');
-  font-family:monospace;
-  background-size: 300vh;
-  hight: 100vh;
+  background-image: url('https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/images/13%20June%202014.jpg?itok=NYulScxO');
+  font-size: 12px;
+  background-size: 250vh;
+  height: 150vh;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*se a tela tive pelo menos 4
+00 px este estilo*/
+@media(min-width: 600px){
+  body{
+    font-size: 20px;
+  }
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top:0;
 }
 
 .menu ul{
   display: flex;
   justify-content: space-around;
+}
+
+.menu a{
+  display: block;
+  /*! background-color: aquamarine; */
+  padding: 10px 20px;
 }
 
 a{
@@ -27,15 +62,34 @@ a:hover{
   text-decoration: underline;
 }
 
+figcaption{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-align: center
+}
 .menu li{
   list-style: none;
 }
 
 .site-title,.site-subtitle{
   text-align: center;
-  color: whitesmoke;
+  color: #d2cdcd;
 }
 
+.site-title{
+  font-family: 'Source Code Pro', monospace;;
+  font-size: 2em;
+}
 .site-subtitle{
+  font-family: 'Source Code Pro', monospace;
   font-style:italic;
+  font-size: 1em;
+}
+
+section{
+  text-align: center;
+  border-radius: 250px;
+  background-color: #2a2f29;
+  color : #d2cdcd;
 }
